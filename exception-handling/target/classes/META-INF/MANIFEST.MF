@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: VM67964
+Build-Jdk: 11.0.15
+Implementation-Title: exception-handling
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.codeusingjava
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/exception-handling
+Created-By: Maven Integration for Eclipse
+
