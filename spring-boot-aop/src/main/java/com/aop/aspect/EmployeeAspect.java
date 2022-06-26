@@ -10,14 +10,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class EmployeeAspect {
 
-	@Before(value = "execution(* com.javainuse.service.EmployeeService.*(..)) and args(name,empId)")
+	@Before(value = "execution(* com.aop.service.EmployeeService.*(..)) and args(name,empId)")
 	public void beforeAdvice(JoinPoint joinPoint, String name, String empId) {
 		System.out.println("Before method:" + joinPoint.getSignature());
 
 		System.out.println("Creating Employee with name - " + name + " and id - " + empId);
 	}
 
-	@After(value = "execution(* com.javainuse.service.EmployeeService.*(..)) and args(name,empId)")
+	@After(value = "execution(* com.aop.service.EmployeeService.*(..)) and args(name,empId)")
 	public void afterAdvice(JoinPoint joinPoint, String name, String empId) {
 		System.out.println("After method:" + joinPoint.getSignature());
 
