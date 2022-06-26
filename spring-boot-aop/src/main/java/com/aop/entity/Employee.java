@@ -30,6 +30,5 @@ public class Employee {
 			return "Employee [empId=" + empId + ", name=" + name + "]";
 		}
 
-		
 }
 
