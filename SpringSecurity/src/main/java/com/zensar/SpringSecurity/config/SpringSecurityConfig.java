@@ -12,7 +12,6 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 
 @SuppressWarnings("deprecation")
 @EnableWebSecurity
-	
 	public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 	 
 	    
@@ -35,7 +34,6 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 	 
 	    
 	    @Bean
-	    
 	    public PasswordEncoder passwordEncoder()
 	    {
 	        return new BCryptPasswordEncoder();
@@ -43,7 +41,6 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 	 
 	   
 	    @Override
-	    
 	    protected void configure(HttpSecurity http)
 	        throws Exception
 	    {
@@ -67,8 +64,6 @@ import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
 	            .logoutRequestMatcher(
 	                new AntPathRequestMatcher("/logout"))
 	            .permitAll();
-	    }
-	
-	 
+	    } 
 	 
 }
